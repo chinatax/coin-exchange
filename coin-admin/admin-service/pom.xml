@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ctax2u</groupId>
-        <artifactId>coin-exchange</artifactId>
+        <artifactId>coin-admin</artifactId>
         <version>1.0</version>
     </parent>
 
@@ -17,4 +17,29 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!--依赖安装-->
+    <dependencies>
+        <dependency>
+            <groupId>com.ctax2u</groupId>
+            <artifactId>admin-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!--服务模块加入本项目的common模块-->
+        <dependency>
+            <groupId>com.ctax2u</groupId>
+            <artifactId>coin-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+
+    <!-- 打包插件 放在项目中的，所有需要单独运行的服务中-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

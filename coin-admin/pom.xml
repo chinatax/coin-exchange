@@ -10,6 +10,7 @@
     </parent>
 
     <artifactId>coin-admin</artifactId>
+    <packaging>pom</packaging>
     <modules>
         <module>admin-api</module>
         <module>admin-service</module>
