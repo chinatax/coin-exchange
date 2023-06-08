@@ -12,8 +12,6 @@
         <module>coin-iaas</module>
         <module>coin-common</module>
         <module>coin-admin</module>
-        <module>coin-admin/admin-api</module>
-        <module>coin-admin/admin-service</module>
     </modules>
 
     <properties>
